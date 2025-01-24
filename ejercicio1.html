@@ -1,0 +1,76 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Ejercicio 14 - DOM b�sico y atributos XHTML</title>
+</head>
+
+<body>
+    <p id="contenidos_1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis enim vitae orci. Phasellus
+        libero. Maecenas nisl arcu, consequat congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc,
+        posuere vitae, rutrum et, luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices
+        porttitor, pede. Nullam sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, semper quis,
+        faucibus ut, rhoncus non, mi. Duis pellentesque, felis eu adipiscing ullamcorper, odio urna consequat arcu, at
+        posuere ante quam non dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis scelerisque.</p>
+    <a id="enlace_1" href="#">Ocultar contenidos</a>
+    <br />
+    <p id="contenidos_2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis enim vitae orci. Phasellus
+        libero. Maecenas nisl arcu, consequat congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc,
+        posuere vitae, rutrum et, luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices
+        porttitor, pede. Nullam sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, semper quis,
+        faucibus ut, rhoncus non, mi. Duis pellentesque, felis eu adipiscing ullamcorper, odio urna consequat arcu, at
+        posuere ante quam non dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis scelerisque.</p>
+    <a id="enlace_2" href="#">Ocultar contenidos</a>
+    <br />
+    <p id="contenidos_3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis enim vitae orci. Phasellus
+        libero. Maecenas nisl arcu, consequat congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc,
+        posuere vitae, rutrum et, luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices
+        porttitor, pede. Nullam sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, semper quis,
+        faucibus ut, rhoncus non, mi. Duis pellentesque, felis eu adipiscing ullamcorper, odio urna consequat arcu, at
+        posuere ante quam non dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis scelerisque.</p>
+    <a id="enlace_3" href="#">Ocultar contenidos</a>
+    <script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
+        data-cf-settings="d23aefe514db86a02c339ef7-|49" defer></script>
+
+        <script>
+            let parrafo1 = document.getElementById("contenidos_1");
+            let enlace1 = document.getElementById("enlace_1");
+            let parrafo2 = document.getElementById("contenidos_2");
+            let enlace2 = document.getElementById("enlace_2");
+            let parrafo3 = document.getElementById("contenidos_3");
+            let enlace3 = document.getElementById("enlace_3");
+
+            enlace1.addEventListener("click", function(){
+                if(parrafo1.style.display === "none"){
+                    enlace1.innerHTML = "Ocultar contenidos";
+                    parrafo1.style.display = "block";
+                } else{
+                    parrafo1.style.display = "none";
+                    enlace1.innerHTML = "Mostrar contenidos";
+                }
+            });
+
+            enlace2.addEventListener("click", function(){
+                if(parrafo2.style.display === "none"){
+                    enlace2.innerHTML = "Ocultar contenidos";
+                    parrafo2.style.display = "block";
+                } else{
+                    parrafo2.style.display = "none";
+                    enlace2.innerHTML = "Mostrar contenidos";
+                }
+            });
+
+            enlace3.addEventListener("click", function(){
+                if(parrafo3.style.display === "none"){
+                    enlace3.innerHTML = "Ocultar contenidos";
+                    parrafo3.style.display = "block";
+                } else{
+                    parrafo3.style.display = "none";
+                    enlace3.innerHTML = "Mostrar contenidos";
+                }
+            });
+</script>
+</body>
+</html>
